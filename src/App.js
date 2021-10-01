@@ -19,6 +19,10 @@ import ReceiveThree from './screens/receive/ReceiveThree';
 import ReceiveFour from './screens/receive/ReceiveFour';
 import ReceiveFive from './screens/receive/ReceiveFive';
 import Sendsuccess from './screens/send/Sendsuccess';
+
+import User from './screens/uservalidation/User';
+import UserOne from './screens/uservalidation/UserOne';
+import Usersuccess from './screens/uservalidation/Usersuccess';
 import './index.css';
 
 const App = () => {
@@ -48,6 +52,11 @@ const App = () => {
         <Route exact path='/exchange-one' component={ExchangeOne} />
         <Route exact path='/verify' component={Verify} />
         <Route exact path='/verify-success' component={VerifySuccess} />
+
+        {/* User validation Routes */}
+        <Route exact path='/user' component={User} />
+        <Route exact path='/user-one' component={UserOne} />
+        <Route exact path='/user-success' component={Usersuccess} />
       </Switch>
     </Router>
   );

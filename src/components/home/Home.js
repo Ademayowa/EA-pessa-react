@@ -14,7 +14,7 @@ const Home = () => {
 
             <h2>Decentralized Foreign Exchange</h2>
             <Link
-              to='/dashboard'
+              to='/user'
               className='btn btn-primary btn-lg mt-4 mb-4 d-grid gap-2 d-block'
             >
               Get Started
@@ -22,7 +22,7 @@ const Home = () => {
 
             <p className='text-white text-center'>
               Already have an account?
-              <Link to='/dashboard' className='ms-2'>
+              <Link to='/user' className='ms-2'>
                 Sign In
               </Link>
             </p>
