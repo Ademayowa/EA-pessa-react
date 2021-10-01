@@ -8,7 +8,7 @@ import './Sidebar.css';
 const Sidebar = () => {
   return (
     <div className='sidebar col-sm-12 col-md-12 col-lg-2 col-xxl-12'>
-      <Link to='/dashboard'>
+      <Link to='/'>
         <SidebarOption text='Home' Icon={BiHomeCircle} />
       </Link>
 
