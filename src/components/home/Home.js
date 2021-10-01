@@ -22,7 +22,7 @@ const Home = () => {
 
             <p className='text-white text-center'>
               Already have an account?
-              <Link to='/user' className='ms-2'>
+              <Link to='/login' className='ms-2'>
                 Sign In
               </Link>
             </p>
