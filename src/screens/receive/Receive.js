@@ -23,9 +23,9 @@ const Receive = () => {
             <h4 className='text-white fs-6 mt-4'>Select Asset</h4>
             <select className='form-select form-select-lg'>
               <option selected>Select an asset</option>
-              <option value='1'>One</option>
-              <option value='2'>Two</option>
-              <option value='3'>Three</option>
+              <option value='1'>TSH</option>
+              <option value='2'>KSH</option>
+              <option value='3'>NHG</option>
             </select>
           </div>
         </div>
