@@ -26,7 +26,7 @@ const Successful = () => {
         <p className='text-center fs-2 text-white mt-5'>Successful</p>
 
         <div className='d-grid gap-2'>
-          <Link to='/dashboard' className='btn btn-primary btn-lg'>
+          <Link to='/user-details' className='btn btn-primary btn-lg'>
             Continue
           </Link>
         </div>

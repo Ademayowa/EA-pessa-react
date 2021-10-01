@@ -23,6 +23,9 @@ import Sendsuccess from './screens/send/Sendsuccess';
 import User from './screens/uservalidation/User';
 import UserOne from './screens/uservalidation/UserOne';
 import Usersuccess from './screens/uservalidation/Usersuccess';
+import UserDetails from './screens/uservalidation/UserDetails';
+import CreateAccount from './screens/uservalidation/CreateAccount';
+import CreateOne from './screens/uservalidation/CreateOne';
 import './index.css';
 
 const App = () => {
@@ -57,6 +60,9 @@ const App = () => {
         <Route exact path='/user' component={User} />
         <Route exact path='/user-one' component={UserOne} />
         <Route exact path='/user-success' component={Usersuccess} />
+        <Route exact path='/user-details' component={UserDetails} />
+        <Route exact path='/create-account' component={CreateAccount} />
+        <Route exact path='/create-one' component={CreateOne} />
       </Switch>
     </Router>
   );
