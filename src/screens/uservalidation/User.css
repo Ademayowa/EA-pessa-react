@@ -3,3 +3,10 @@
   border: 2px solid rgba(255, 255, 255, 0.03);
   border-radius: 12px;
 }
+
+.account-color {
+  background: #212330;
+  border: 1px solid #00ff47;
+  box-sizing: border-box;
+  border-radius: 12px;
+}

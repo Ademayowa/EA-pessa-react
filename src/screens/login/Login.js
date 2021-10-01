@@ -1,9 +1,9 @@
 import { useState } from 'react';
 import { BsArrowLeft } from 'react-icons/bs';
 import { Link, useHistory } from 'react-router-dom';
-import './User.css';
+import './Login.css';
 
-const CreateOne = () => {
+const Login = () => {
   const [disabled, setDisabled] = useState(true);
 
   let history = useHistory();
@@ -17,7 +17,7 @@ const CreateOne = () => {
   };
 
   const handleClick = (e) => {
-    history.push('/confirm-seed');
+    history.push('/passphrase');
   };
 
   return (
@@ -25,21 +25,25 @@ const CreateOne = () => {
       <form className='container'>
         <div className='wrapper d-flex text-right text-white mb-1'>
           <div className='arrow'>
-            <Link to='/create-account'>
+            <Link to='/account-success'>
               <BsArrowLeft className='text-white' />
             </Link>
           </div>
 
           <div className='mx-auto'>
-            <h4 className='fs-5'>Create Account</h4>
+            <h4 className='fs-5'>Login</h4>
           </div>
         </div>
 
         <div className='row'>
           <div className='col-lg-12'>
             <div className='hold'>
-              <h4 className='text-white fs-6 mt-4 ms-2'>Confirm Seed</h4>
-
+              <label
+                htmlFor='enterpassphrase'
+                className='text-white fs-6 mt-4 ms-2'
+              >
+                Enter Passphrase
+              </label>
               <div className='input-group'>
                 <input
                   type='text'
@@ -49,10 +53,21 @@ const CreateOne = () => {
                 />
               </div>
 
-              <p className='mt-4 mb-5 text-secondary'>
+              <p className='mt-4 mb-4 text-secondary'>
                 Your seed is very important! In order to be sure that you have
                 saved it, please confirm your seed.
               </p>
+
+              <label htmlFor='enterpassphrase' className='text-white fs-6 ms-2'>
+                Enter Passphrase
+              </label>
+              <div className='input-group'>
+                <input
+                  type='text'
+                  className='form-control bgc'
+                  onChange={onChange}
+                />
+              </div>
             </div>
           </div>
         </div>
@@ -71,4 +86,4 @@ const CreateOne = () => {
   );
 };
 
-export default CreateOne;
+export default Login;

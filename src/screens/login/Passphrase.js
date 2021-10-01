@@ -1,9 +1,9 @@
 import { useState } from 'react';
 import { BsArrowLeft } from 'react-icons/bs';
 import { Link, useHistory } from 'react-router-dom';
-import './User.css';
+import './Login.css';
 
-const CreateOne = () => {
+const Passphrase = () => {
   const [disabled, setDisabled] = useState(true);
 
   let history = useHistory();
@@ -17,7 +17,7 @@ const CreateOne = () => {
   };
 
   const handleClick = (e) => {
-    history.push('/confirm-seed');
+    history.push('/dashboard');
   };
 
   return (
@@ -25,34 +25,42 @@ const CreateOne = () => {
       <form className='container'>
         <div className='wrapper d-flex text-right text-white mb-1'>
           <div className='arrow'>
-            <Link to='/create-account'>
+            <Link to='/login'>
               <BsArrowLeft className='text-white' />
             </Link>
           </div>
 
           <div className='mx-auto'>
-            <h4 className='fs-5'>Create Account</h4>
+            <h4 className='fs-5'>Login</h4>
           </div>
         </div>
 
         <div className='row'>
           <div className='col-lg-12'>
             <div className='hold'>
-              <h4 className='text-white fs-6 mt-4 ms-2'>Confirm Seed</h4>
+              <h4 className='text-white fs-6 mt-4 ms-2'>Generated Seed</h4>
+              <div>
+                <p className='text-secondary col-12 p-2 account-p'>
+                  cup blame cover magic jelly romance blossom cloud brief fall
+                  scale whisper mom inject shrimp harbor velvet treat
+                </p>
+              </div>
 
+              <p className='mt-4 mb-4 text-secondary'>
+                Your seed is very important! In order to be sure that you have
+                saved it, please confirm your seed.
+              </p>
+
+              <label htmlFor='enterpassphrase' className='text-white fs-6 ms-2'>
+                Enter Pin
+              </label>
               <div className='input-group'>
                 <input
                   type='text'
                   className='form-control bgc'
-                  placeholder='Enter Seed'
                   onChange={onChange}
                 />
               </div>
-
-              <p className='mt-4 mb-5 text-secondary'>
-                Your seed is very important! In order to be sure that you have
-                saved it, please confirm your seed.
-              </p>
             </div>
           </div>
         </div>
@@ -71,4 +79,4 @@ const CreateOne = () => {
   );
 };
 
-export default CreateOne;
+export default Passphrase;

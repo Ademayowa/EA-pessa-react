@@ -26,6 +26,11 @@ import Usersuccess from './screens/uservalidation/Usersuccess';
 import UserDetails from './screens/uservalidation/UserDetails';
 import CreateAccount from './screens/uservalidation/CreateAccount';
 import CreateOne from './screens/uservalidation/CreateOne';
+import ConfirmSeed from './screens/uservalidation/ConfirmSeed';
+import Accountid from './screens/uservalidation/Accountid';
+import Accountsuccess from './screens/uservalidation/Accountsuccess';
+import Login from './screens/login/Login';
+import Passphrase from './screens/login/Passphrase';
 import './index.css';
 
 const App = () => {
@@ -63,6 +68,11 @@ const App = () => {
         <Route exact path='/user-details' component={UserDetails} />
         <Route exact path='/create-account' component={CreateAccount} />
         <Route exact path='/create-one' component={CreateOne} />
+        <Route exact path='/confirm-seed' component={ConfirmSeed} />
+        <Route exact path='/account-id' component={Accountid} />
+        <Route exact path='/account-success' component={Accountsuccess} />
+        <Route exact path='/login' component={Login} />
+        <Route exact path='/passphrase' component={Passphrase} />
       </Switch>
     </Router>
   );
