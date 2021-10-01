@@ -1,0 +1,66 @@
+/* qr screen start */
+.qrScan,
+.qrOne {
+  /* background-color: var(--main-bgc); */
+  padding: var(--padding);
+}
+
+.tshape {
+  font-family: var(--main-font);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 19px;
+  color: #7b7f9e;
+  margin-top: -15px;
+}
+
+.circle {
+  font-family: var(--main-font);
+  width: 60px;
+  height: 60px;
+  border-radius: 250px;
+  font-size: 25px;
+  color: #83bd67;
+  line-height: 100px;
+  text-align: center;
+  background: #35423b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 5%;
+  top: 23%;
+}
+
+/* .center > h4 {
+  text-align: center;
+} */
+
+.arrow {
+  color: #fff;
+  font-size: 30px;
+  margin-top: -10px !important;
+}
+/* qr screen end */
+
+/* qrOne Screen start */
+/* .bgc,
+.hold .des {
+  background-color: #212330 !important;
+  border: 2px solid rgba(255, 255, 255, 0.03) !important;
+} */
+
+/* remove this later & target the specific */
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: var(--white-color) !important;
+  /* Firefox */
+}
+
+.group ::placeholder,
+.group textarea {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #4f4f4f !important;
+  opacity: 1; /* Firefox */
+}
+/* qrOne Screen end */

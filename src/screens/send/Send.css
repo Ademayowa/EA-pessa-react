@@ -1,0 +1,204 @@
+.send,
+.sendOne,
+.sendThree,
+.sendFour,
+.pin {
+  background-color: var(--main-bgc);
+  padding: var(--padding);
+  /* remove later */
+  /* height: 100vh; */
+}
+
+.background {
+  /* background: #212330; */
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 12px;
+  padding: 20px;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.totbalance {
+  font-family: var(--main-font);
+  font-size: 20px;
+  font-weight: 900;
+  line-height: 46px;
+  color: var(--white-color);
+}
+
+.tshape {
+  font-family: var(--main-font);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 19px;
+  color: #7b7f9e;
+  margin-top: -15px;
+}
+
+.circle {
+  font-family: var(--main-font);
+  width: 60px;
+  height: 60px;
+  border-radius: 250px;
+  font-size: 25px;
+  color: #83bd67;
+  line-height: 100px;
+  text-align: center;
+  background: #35423b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 5%;
+  top: 23%;
+}
+
+.center > h4 {
+  text-align: center;
+}
+
+.arrow {
+  color: #fff;
+  font-size: 30px;
+  margin-top: -10px !important;
+}
+
+.bgc {
+  margin-top: 0 !important;
+}
+
+/* SendOne Screen start */
+.bgc,
+.hold .des {
+  /* background-color: #212330; */
+  border: 2px solid rgba(255, 255, 255, 0.03) !important;
+}
+
+.des {
+  background-color: #212330;
+}
+
+.input-group
+  > :not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback) {
+  position: absolute;
+  right: 3%;
+  top: 20%;
+  font-weight: 600;
+  border-radius: 30px !important;
+  background-color: #1a394c;
+  color: #83bd67;
+  font-size: 20px;
+  width: 35px !important;
+  height: 35px !important;
+  border: none;
+  z-index: 1;
+}
+
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: var(--white-color) !important;
+  opacity: 1; /* Firefox */
+}
+
+.hold {
+  position: relative;
+}
+
+.label-tsh {
+  position: absolute;
+  top: 40% !important;
+  left: 2% !important;
+  z-index: 1;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 48px;
+  color: #4f4f4f !important;
+}
+
+/* move circle shape to the end on tabs & desktop */
+@media (min-width: 768px) {
+  .circle {
+    position: absolute;
+    right: 1% !important;
+    top: 23%;
+  }
+}
+
+@media (min-width: 768px) {
+  .input-group
+    > :not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback) {
+    position: absolute;
+    right: 1% !important;
+    top: 20%;
+  }
+
+  /* TSH Wallet text on input form in screenOne */
+  @media (min-width: 768px) {
+    .label-tsh {
+      position: absolute;
+      top: 38%;
+      left: 12%;
+      z-index: 1;
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 48px;
+      color: #4f4f4f !important;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .label-tsh {
+    position: absolute;
+    left: 24%;
+  }
+}
+/* SendOne Screen end */
+
+/* SendThree Screen start */
+.label-tsh1 {
+  position: absolute;
+  top: 35%;
+  left: 2%;
+  z-index: 1;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 48px;
+  color: #4f4f4f !important;
+}
+
+.hold textarea {
+  height: 150px !important;
+}
+/* SendThree Screen end */
+
+/* Successful start */
+.successful {
+  background-color: var(--main-bgc);
+  padding: var(--padding);
+}
+
+.mark {
+  padding: var(--padding);
+  background-color: var(--main-bgc);
+  font-size: 6rem;
+  text-align: center;
+  color: white;
+}
+/* Successful end */
+
+/* Pin start */
+.form-lg {
+  font-size: 4rem !important;
+}
+
+.form-select-lg {
+  background: var(--main-bgc) !important;
+  color: var(--white-color);
+}
+
+.form input {
+  background-color: var(--main-bgc) !important;
+  color: white !important;
+}
+/* Pin end */
