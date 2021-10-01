@@ -24,7 +24,7 @@ const Sidebar = () => {
         <SidebarOption text='Support' Icon={BiSupport} />
       </Link>
 
-      <Link to='#'>
+      <Link to='/'>
         <SidebarOption text='LogOut' Icon={BsPower} />
       </Link>
     </div>
