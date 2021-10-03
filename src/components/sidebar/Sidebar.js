@@ -16,11 +16,11 @@ const Sidebar = () => {
         <SidebarOption text='Wallets' Icon={IoMdWallet} />
       </Link>
 
-      <Link to='#'>
+      <Link to='/upload'>
         <SidebarOption text='Upload' Icon={BsCloudUpload} />
       </Link>
 
-      <Link to='#'>
+      <Link to='/support'>
         <SidebarOption text='Support' Icon={BiSupport} />
       </Link>
 

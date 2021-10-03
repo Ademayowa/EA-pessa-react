@@ -31,6 +31,8 @@ import Accountid from './screens/uservalidation/Accountid';
 import Accountsuccess from './screens/uservalidation/Accountsuccess';
 import Login from './screens/login/Login';
 import Passphrase from './screens/login/Passphrase';
+import Upload from './pages/upload/Upload';
+import Support from './pages/support/Support';
 import './index.css';
 
 const App = () => {
@@ -73,6 +75,10 @@ const App = () => {
         <Route exact path='/account-success' component={Accountsuccess} />
         <Route exact path='/login' component={Login} />
         <Route exact path='/passphrase' component={Passphrase} />
+
+        {/* Upload Route */}
+        <Route exact path='/upload' component={Upload} />
+        <Route exact path='/support' component={Support} />
       </Switch>
     </Router>
   );
