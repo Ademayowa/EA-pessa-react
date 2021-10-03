@@ -37,22 +37,6 @@ const Accountid = () => {
               Congratulations!! Your account has been create. Kindly select
               login and transaction signing methods.
             </p>
-
-            <div className='mt-5 mb-2 fw-light'>
-              <h4 className='text-white fs-6 mt-4'>Login Method</h4>
-              <select className='form-select form-select-lg'>
-                <option>Passphrase & Pin</option>
-              </select>
-            </div>
-
-            <div className='mt-5 mb-2 fw-light'>
-              <h4 className='text-white fs-6 mt-4'>
-                Transaction Signing Method Method
-              </h4>
-              <select className='form-select form-select-lg'>
-                <option>Fingerprint & Pin</option>
-              </select>
-            </div>
           </div>
         </div>
 

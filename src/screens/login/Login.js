@@ -17,7 +17,7 @@ const Login = () => {
   };
 
   const handleClick = (e) => {
-    history.push('/passphrase');
+    history.push('/dashboard');
   };
 
   return (
@@ -42,13 +42,13 @@ const Login = () => {
                 htmlFor='enterpassphrase'
                 className='text-white fs-6 mt-4 ms-2'
               >
-                Enter Passphrase
+                Enter Email/Password
               </label>
               <div className='input-group'>
                 <input
                   type='text'
                   className='form-control bgc'
-                  placeholder='Enter Seed'
+                  placeholder='Enter Email'
                   onChange={onChange}
                 />
               </div>
@@ -78,7 +78,7 @@ const Login = () => {
             disabled={disabled}
             className='btn btn-secondary btn-lg'
           >
-            Next
+            Login
           </button>
         </div>
       </form>

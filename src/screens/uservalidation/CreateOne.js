@@ -17,7 +17,7 @@ const CreateOne = () => {
   };
 
   const handleClick = (e) => {
-    history.push('/confirm-seed');
+    history.push('/account-id');
   };
 
   return (
