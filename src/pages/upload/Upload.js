@@ -18,7 +18,7 @@ const Upload = () => {
   };
 
   return (
-    <div className='container'>
+    <div className='container mb-5'>
       <div className='col-lg-12 d-flex'>
         <Link to='/dashboard' className='text-white arrows'>
           <BsArrowLeft />
