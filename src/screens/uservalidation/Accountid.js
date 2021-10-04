@@ -28,7 +28,7 @@ const Accountid = () => {
                 <input
                   type='text'
                   className='form-control bgc mb-4'
-                  placeholder='ARDOR-ELRY-LWLK-NVAU-HNAEL'
+                  placeholder='PESA-ELRY-LWLK-NVAU-HNAEL'
                 />
               </div>
             </div>

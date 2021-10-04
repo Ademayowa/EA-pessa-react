@@ -31,7 +31,7 @@ const Exchange = () => {
               <select className='form-select form-select-lg'>
                 <option selected>Select asset pair</option>
                 <option value='1'>TSH/KSH</option>
-                <option value='2'>Two</option>
+                <option value='2'>NGN/TSH</option>
               </select>
             </div>
           </div>

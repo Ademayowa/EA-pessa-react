@@ -52,7 +52,7 @@ const Wallets = () => {
             <div className='background'>
               <div className='wrapper'>
                 <div className='d-flex flex-column'>
-                  <h2 className='totbalance'>TSH 139,37.22</h2>
+                  <h2 className='totbalance'>NGN 139,37.22</h2>
                   <h3 className='tshape'>NGN</h3>
                   <h4 className='circle'>N</h4>
                 </div>

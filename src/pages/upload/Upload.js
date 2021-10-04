@@ -19,15 +19,16 @@ const Upload = () => {
 
   return (
     <div className='container'>
-      <div className='col-lg-12'>
-        <Link to='/dashboard' className='text-white arrow'>
+      <div className='col-lg-12 d-flex'>
+        <Link to='/dashboard' className='text-white arrows'>
           <BsArrowLeft />
         </Link>
+
+        <div className='col-lg-6 mx-auto mt-5 text-white text-center uload'>
+          <input type='file' onChange={onChange} className='text-center ms-5' />
+        </div>
       </div>
 
-      <div className='col-lg-6 mx-auto mt-5 text-white text-center'>
-        <input type='file' onChange={onChange} />
-      </div>
       <Form recepient={recepient} sender={sender} amount={amount} fee={fee} />
     </div>
   );
