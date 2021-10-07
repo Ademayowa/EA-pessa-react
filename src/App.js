@@ -33,6 +33,7 @@ import Login from './screens/login/Login';
 import Passphrase from './screens/login/Passphrase';
 import Upload from './pages/upload/Upload';
 import Support from './pages/support/Support';
+import History from './pages/history/History';
 import './index.css';
 
 const App = () => {
@@ -57,6 +58,7 @@ const App = () => {
         <Route exact path='/receivethree' component={ReceiveThree} />
         <Route exact path='/receivefour' component={ReceiveFour} />
         <Route exact path='/receivefive' component={ReceiveFive} />
+        <Route exact path='/history' component={History} />
 
         <Route exact path='/send-success' component={Sendsuccess} />
         <Route exact path='/exchange-one' component={ExchangeOne} />

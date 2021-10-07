@@ -4,6 +4,7 @@ import Img1 from '../../images/receive.png';
 import Img2 from '../../images/exchange.png';
 import Img3 from '../../images/code.png';
 import './Transactions.css';
+import Img4 from '../../images/transaction.png';
 
 const Transactions = () => {
   return (
@@ -55,6 +56,15 @@ const Transactions = () => {
             </div>
           </div>
           QR
+        </Link>
+
+        <Link to='/history' className='col-3 mt-4'>
+          <div className='bgc mb-2'>
+            <div className='d-flex justify-content-center'>
+              <img src={Img4} alt='icons' className='mb-1 img-fluid' />
+            </div>
+          </div>
+          Transaction History
         </Link>
       </div>
     </div>
