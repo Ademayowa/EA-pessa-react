@@ -1,0 +1,75 @@
+/* exchange screen start */
+.p2p,
+.p2p-one,
+.p2p-two {
+  padding: var(--padding);
+}
+
+.tshape,
+.background h1 {
+  font-family: var(--main-font);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 19px;
+  color: #7b7f9e;
+}
+
+.circle {
+  font-family: var(--main-font);
+  width: 60px;
+  height: 60px;
+  border-radius: 250px;
+  font-size: 25px;
+  color: #83bd67;
+  line-height: 100px;
+  text-align: center;
+  background: #35423b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 5%;
+  top: 23%;
+}
+
+.totbalance {
+  font-family: var(--main-font);
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 46px;
+  color: var(--white-color);
+  margin-top: -10px;
+  margin-bottom: 10px;
+}
+
+.arrow {
+  color: #fff;
+  font-size: 30px;
+  margin-top: -10px !important;
+}
+
+/* Peertopeer two starts */
+.numbers > p {
+  font-size: 10px;
+  color: #7b7f9e;
+}
+
+.pull-up {
+  position: relative;
+  top: -15px;
+  z-index: -1000;
+}
+
+.user-trader {
+  background: #212330;
+  border: 1px solid rgba(123, 127, 158, 0.14);
+  box-sizing: border-box;
+  border-radius: 12px;
+}
+/* Peertopeer two end */
+
+/* confirm details start */
+.confirm-details {
+  padding: var(--padding);
+}
+/* confirm details end */

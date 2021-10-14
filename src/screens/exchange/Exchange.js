@@ -33,6 +33,13 @@ const Exchange = () => {
                 <option value='1'>TSH/KSH</option>
                 <option value='2'>NGN/TSH</option>
               </select>
+
+              <h4 className='text-white fs-6 mt-4'>Exchange Method</h4>
+              <select className='form-select form-select-lg'>
+                <option selected>Select an option</option>
+                <option value='1'>P2P</option>
+                <option value='2'>Market rate</option>
+              </select>
             </div>
           </div>
 

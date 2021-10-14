@@ -35,6 +35,10 @@ import Upload from './pages/upload/Upload';
 import Support from './pages/support/Support';
 import History from './pages/history/History';
 import './index.css';
+import PeerToPeer from './screens/p2p/PeerToPeer';
+import PeerToPeerOne from './screens/p2p/PeerToPeerOne';
+import PeerToPeerTwo from './screens/p2p/PeerToPeerTwo';
+import ConfirmDetails from './screens/p2p/ConfirmDetails';
 
 const App = () => {
   return (
@@ -64,6 +68,10 @@ const App = () => {
         <Route exact path='/exchange-one' component={ExchangeOne} />
         <Route exact path='/verify' component={Verify} />
         <Route exact path='/verify-success' component={VerifySuccess} />
+        <Route exact path='/p2p' component={PeerToPeer} />
+        <Route exact path='/p2p-one' component={PeerToPeerOne} />
+        <Route exact path='/p2p-two' component={PeerToPeerTwo} />
+        <Route exact path='/confirm' component={ConfirmDetails} />
 
         {/* User validation Routes */}
         <Route exact path='/user' component={User} />
