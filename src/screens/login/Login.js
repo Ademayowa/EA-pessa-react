@@ -1,6 +1,5 @@
 import { useState } from 'react';
-import { BsArrowLeft } from 'react-icons/bs';
-import { Link, useHistory } from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
 import './Login.css';
 
 const Login = () => {
