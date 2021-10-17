@@ -1,15 +1,13 @@
 import { BsArrowLeft } from 'react-icons/bs';
 import { Link, useHistory } from 'react-router-dom';
 import Img from '../../images/trader1.png';
-import Img2 from '../../images/trader2.png';
-import Img3 from '../../images/trader3.png';
 import './PeerToPeer.css';
 
 const ConfirmDetails = () => {
   let history = useHistory();
 
   const handleClick = (e) => {
-    history.push('/');
+    history.push('/pin');
   };
 
   return (
@@ -74,7 +72,12 @@ const ConfirmDetails = () => {
           </p>
 
           <div className='d-grid gap-2 d-block mt-4'>
-            <button className='btn btn-secondary btn-lg'>Confirm</button>
+            <Link className='btn btn-outline-secondary btn-lg mb-2'>
+              Cancel
+            </Link>
+            <button onClick={handleClick} className='btn btn-secondary btn-lg'>
+              Confirm
+            </button>
           </div>
         </div>
       </div>

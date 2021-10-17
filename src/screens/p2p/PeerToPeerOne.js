@@ -6,7 +6,7 @@ const PeerToPeerOne = () => {
   let history = useHistory();
 
   const handleClick = (e) => {
-    history.push('/');
+    history.push('/p2p-two');
   };
 
   return (

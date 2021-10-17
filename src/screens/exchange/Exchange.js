@@ -1,12 +1,24 @@
+import { useState } from 'react';
 import { BsArrowLeft } from 'react-icons/bs';
 import { Link, useHistory } from 'react-router-dom';
 import './Exchange.css';
 
 const Exchange = () => {
+  const [value, setValue] = useState('');
+  const [p2p, setP2p] = useState('p2p');
+  const [marketRate, setMarketRate] = useState('marketRate');
   let history = useHistory();
 
   const handleClick = (e) => {
-    history.push('/exchange-one');
+    if (value === marketRate) {
+      history.push('/exchange-one');
+    } else {
+      history.push('/p2p');
+    }
+  };
+
+  const onChange = (e) => {
+    setValue(e.target.value);
   };
 
   return (
@@ -29,16 +41,19 @@ const Exchange = () => {
             <div className='col-lg-12'>
               <h4 className='text-white fs-6 mt-4'>Select Asset</h4>
               <select className='form-select form-select-lg'>
-                <option selected>Select asset pair</option>
+                <option>Select asset pair</option>
                 <option value='1'>TSH/KSH</option>
                 <option value='2'>NGN/TSH</option>
               </select>
 
               <h4 className='text-white fs-6 mt-4'>Exchange Method</h4>
-              <select className='form-select form-select-lg'>
-                <option selected>Select an option</option>
-                <option value='1'>P2P</option>
-                <option value='2'>Market rate</option>
+              <select
+                className='form-select form-select-lg'
+                onChange={onChange}
+              >
+                <option>Select an option</option>
+                <option value={p2p}>P2P</option>
+                <option value={marketRate}>Market rate</option>
               </select>
             </div>
           </div>

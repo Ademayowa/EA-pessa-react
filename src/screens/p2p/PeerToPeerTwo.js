@@ -9,12 +9,12 @@ const PeerToPeerTwo = () => {
   let history = useHistory();
 
   const handleClick = (e) => {
-    history.push('/');
+    history.push('/confirm');
   };
 
   return (
     <section className='p2p-two'>
-      <div className='container'>
+      <div className='container mb-4'>
         <div className='wrapper d-flex text-right text-white mb-1'>
           <div className='arrow'>
             <Link to='/p2p-one'>
@@ -149,6 +149,12 @@ const PeerToPeerTwo = () => {
               </div>
             </div>
           </div>
+        </div>
+
+        <div className='d-grid gap-2 d-block'>
+          <button onClick={handleClick} className='btn btn-secondary btn-lg'>
+            Next
+          </button>
         </div>
       </div>
     </section>

@@ -72,4 +72,8 @@
 .confirm-details {
   padding: var(--padding);
 }
+
+.btn-primary {
+  border: none !important;
+}
 /* confirm details end */
