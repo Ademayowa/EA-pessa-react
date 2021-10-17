@@ -24,12 +24,6 @@ const Login = () => {
     <section className='sendOne'>
       <form className='container'>
         <div className='wrapper d-flex text-right text-white mb-1'>
-          <div className='arrow'>
-            <Link to='/account-success'>
-              <BsArrowLeft className='text-white' />
-            </Link>
-          </div>
-
           <div className='mx-auto'>
             <h4 className='fs-5'>Login</h4>
           </div>
