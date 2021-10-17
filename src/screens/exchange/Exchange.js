@@ -5,8 +5,8 @@ import './Exchange.css';
 
 const Exchange = () => {
   const [value, setValue] = useState('');
-  const [p2p, setP2p] = useState('p2p');
-  const [marketRate, setMarketRate] = useState('marketRate');
+  const [p2p] = useState('p2p');
+  const [marketRate] = useState('marketRate');
   let history = useHistory();
 
   const handleClick = (e) => {
