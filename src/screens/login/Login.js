@@ -33,7 +33,7 @@ const Login = () => {
             <div className='hold'>
               <label
                 htmlFor='enterpassphrase'
-                className='text-white fs-6 mt-4 ms-2'
+                className='text-white fs-6 mt-4 ms-2 mb-2'
               >
                 Enter Email/Password
               </label>
@@ -51,7 +51,10 @@ const Login = () => {
                 saved it, please confirm your seed.
               </p>
 
-              <label htmlFor='enterpassphrase' className='text-white fs-6 ms-2'>
+              <label
+                htmlFor='enterpassphrase'
+                className='text-white fs-6 ms-2 mb-2'
+              >
                 Enter Passphrase
               </label>
               <div className='input-group'>
